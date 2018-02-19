@@ -1,4 +1,7 @@
 .App {
-  /* margin: auto 0; */
+  height: 100vh;
   text-align: center;
+  background-image: url('../../images/weather-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
