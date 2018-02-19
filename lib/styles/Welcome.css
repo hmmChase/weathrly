@@ -2,3 +2,9 @@
   font-size: 40px;
   margin: auto 0;
 }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  padding-top: 20px;
+}
