@@ -1,17 +1,20 @@
 .search-bar {
   font-family: 'Montserrat', sans-serif;
   -webkit-appearance: none;
-  font-size: 1em;
+  font-size: 2em;
   width: 40%;
   border: none;
   padding: 5px;
+  outline: none;
 }
 
 .search-button {
   font-family: 'Montserrat', sans-serif;
   -webkit-appearance: none;
-  font-size: 1em;
+  font-size: 2em;
   border: none;
   padding: 5px 10px;
   border-left: solid black 1px;
+  outline: none;
+  cursor: pointer;
 }
