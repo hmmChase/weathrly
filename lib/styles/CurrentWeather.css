@@ -2,15 +2,31 @@
  width: 400px;
  display: inline-block;
  margin-left: 15%;
+ text-align: center;
 
 }
 
 .current-location {
   font-size: 2em;
-  margin-top: 15%;
+  margin-bottom: 5px;
+}
+
+.current-day {
+  margin: 5px 0;
+  font-size: 1.2;
+}
+
+.weather-icon {
+  display: inline-block;
+  margin-right: 25px;
 }
 
 .current-temp {
   font-size: 3em;
   margin: 0;
+  display: inline-block;
+}
+
+.conditions {
+  margin-top: 5px;
 }
