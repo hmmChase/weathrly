@@ -1,0 +1,16 @@
+.current-weather {
+ width: 400px;
+ display: inline-block;
+ margin-left: 15%;
+
+}
+
+.current-location {
+  font-size: 2em;
+  margin-top: 15%;
+}
+
+.current-temp {
+  font-size: 3em;
+  margin: 0;
+}
