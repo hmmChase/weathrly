@@ -1,9 +1,13 @@
+.today {
+  display: flex;
+  color: #024558;
+  margin-left: 10%;
+}
+
 .current-weather {
- width: 400px;
  display: inline-block;
  margin-left: 15%;
  text-align: center;
-
 }
 
 .current-location {
@@ -30,3 +34,28 @@
 .conditions {
   margin-top: 5px;
 }
+
+.todays-weather {
+  padding-left: 13em;
+  width: 300px;
+  text-align: center;
+}
+
+.today-title {
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+.todays-temp {
+ font-size: 3em;
+ margin-top: 7px;
+ margin-bottom: 0;
+ display: inline-block;
+}
+
+.todays-low {
+  color: #03566D;
+}
+
+
+
