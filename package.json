@@ -19,7 +19,7 @@
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     },
     "setupFiles": [
-      "./test/__test-helpers__/storageMock.js"
+      "./test/__test_helpers__/storageMock.js"
     ]
   },
   "author": "Steve Kinney",
@@ -40,7 +40,7 @@
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
-    "enzyme": "^2.8.2",
+    "enzyme": "^2.9.1",
     "eslint": "^2.6.0",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.8.0",

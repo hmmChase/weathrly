@@ -15,3 +15,4 @@ describe('App', () => {
     expect(wrapper).toBeDefined();
   });
 });
+

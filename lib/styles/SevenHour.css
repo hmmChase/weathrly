@@ -1,0 +1,15 @@
+.seven-title {
+  font-size: 3em;
+  margin-top: 1em;
+  text-align: center;
+  color: #024558;
+
+}
+
+.seven-card {
+  display: flex;
+  color: #024558;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
