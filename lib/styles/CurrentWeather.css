@@ -1,13 +1,12 @@
 .today {
-  display: flex;
   color: #024558;
-  margin-left: 10%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .current-weather {
- display: inline-block;
- margin-left: 15%;
- text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 
 .current-location {
@@ -16,8 +15,8 @@
 }
 
 .current-day {
-  margin: 5px 0;
   font-size: 1.2;
+  margin: 5px 0;
 }
 
 .weather-icon {
@@ -26,9 +25,9 @@
 }
 
 .current-temp {
+  display: inline-block;
   font-size: 3em;
   margin: 0;
-  display: inline-block;
 }
 
 .conditions {
@@ -36,26 +35,28 @@
 }
 
 .todays-weather {
-  padding-left: 13em;
-  width: 300px;
   text-align: center;
+  width: 300px;
 }
 
 .today-title {
-  margin-bottom: 0;
   font-size: 2em;
+  margin-bottom: 0;
 }
 
 .todays-temp {
+ display: inline-block;
  font-size: 3em;
  margin-top: 7px;
  margin-bottom: 0;
- display: inline-block;
 }
 
 .todays-low {
   color: #03566D;
 }
 
+.summary {
+  font-size: .99em;
+}
 
 

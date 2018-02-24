@@ -1,0 +1,27 @@
+.card {
+  border: solid;
+  border-radius: 15px;
+  background-color: #dcdcdccf;
+  font-size: 1.3em;
+  margin: .5em;
+}
+
+.time {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.temp {
+  font-size: 1.2em;
+}
+
+.ten-low {
+  color: #03566D;
+  padding: 0 50px;
+}
+
+.day {
+ margin: 10px;
+ font-size: 1em;
+}

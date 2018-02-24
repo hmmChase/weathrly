@@ -1,12 +1,15 @@
+.search {
+  text-align: center;
+}
+
 .search-bar {
   font-family: 'Montserrat', sans-serif;
   -webkit-appearance: none;
   font-size: 2em;
-  width: 40%;
+  width: 45%;
   border: none;
   padding: 5px;
   outline: none;
-  margin-left: 25%;
   margin-top: 10px;
 }
 

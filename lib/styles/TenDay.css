@@ -1,0 +1,14 @@
+.ten-card {
+  display: flex;
+  color: #024558;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.ten-title {
+  text-align: center;
+  color: #024558;
+  margin-top: 1em;
+  font-size: 3em;
+}
