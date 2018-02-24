@@ -4,10 +4,15 @@ import App from '../lib/App';
 
 describe('App', () => {
   let wrapper;
+
   beforeEach(() => {
-    wrapper = shallow(<App />)
-  })
+    localStorage.clear();
+    wrapper = shallow(<App />);
+  });
+
   it('should exist', () => {
+    // console.log(wrapper.debug());
     expect(wrapper).toBeDefined();
   });
-})
+});
+
