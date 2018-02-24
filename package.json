@@ -17,7 +17,10 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
+    },
+    "setupFiles": [
+      "./test/__test_helpers__/storageMock.js"
+    ]
   },
   "author": "Steve Kinney",
   "license": "MIT",
@@ -37,7 +40,7 @@
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
-    "enzyme": "^2.8.2",
+    "enzyme": "^2.9.1",
     "eslint": "^2.6.0",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.8.0",
