@@ -4,3 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.error-message {
+  font-size: 1.5em;
+  margin: 0;
+  margin-left: 26%;
+  color: #c9190c;
+  padding-top: 10px;
+}
