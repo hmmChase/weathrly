@@ -1,18 +1,18 @@
 class localStorage {
   constructor() {
-    this.location = {};
+    this.store = {};
   }
 
   setItem(key, string) {
-    this.location[key] = string;
+    this.store[key] = string;
   }
 
   getItem(key) {
-    return this.location[key];
+    return this.store[key];
   }
 
   clear() {
-    this.location = {};
+    this.store = {};
   }
 }
 

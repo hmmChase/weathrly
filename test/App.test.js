@@ -83,7 +83,7 @@ describe('App', () => {
     expect(wrapper.find('TenDay').length).toEqual(1);
   });
 
-  it.only('Should initially retrieve location from localStorage if available', () => {
+  it.skip('Should initially retrieve location from localStorage if available', () => {
     localStorage.setItem('location', '45505');
     console.log(localStorage);
     console.log(localStorage.getItem('location'));
@@ -91,7 +91,6 @@ describe('App', () => {
     wrapper = mount(<App />);
     console.log(localStorage);
     console.log(wrapper.state());
-
   });
 
 
