@@ -3,19 +3,19 @@ import { shallow, mount } from 'enzyme';
 import CurrentWeather from '../lib/CurrentWeather';
 
 const cleanApiData = {
-    curr: {
-      location: 'denver, co',
-      conditions: 'cloudy',
-      temp: '39',
-      high: '42',
-      low: '23',
-      day: 'tuesday',
-      month: 'may',
-      date: '24',
-      summary: 'Plentiful sunshine. High 42.',
-      icon: 'img.png'
-    }
-}
+  curr: {
+    location: 'denver, co',
+    conditions: 'cloudy',
+    temp: '39',
+    high: '42',
+    low: '23',
+    day: 'tuesday',
+    month: 'may',
+    date: '24',
+    summary: 'Plentiful sunshine. High 42.',
+    icon: 'img.png'
+  }
+};
 
 describe('CurrentWeather', () => {
   let wrapper;
@@ -37,11 +37,11 @@ describe('CurrentWeather', () => {
     expect(wrapper.find('.current-weather').length).toEqual(1);
   });
 
-  it('should have an h2 element with a class of current location', ()=> {
+  it('should have an h2 element with a class of current location', () => {
     expect(wrapper.find('.current-location').text()).toEqual('denver, co');
   });
 
-  it('should have an h3 element with a class of current day', ()=> {
+  it('should have an h3 element with a class of current day', () => {
     expect(wrapper.find('.current-day').text()).toEqual('tuesday, may, 24');
   });
 
@@ -49,31 +49,31 @@ describe('CurrentWeather', () => {
     expect(wrapper.find('.weather-icon').text()).toEqual('');
   });
 
-it('should have an h3 element with a class of current temp', () => {
+  it('should have an h3 element with a class of current temp', () => {
     expect(wrapper.find('.current-temp').text()).toEqual('39˚');
-  }); 
+  });
 
-it('should have an h3 element with a class of conditions', () => {
+  it('should have an h3 element with a class of conditions', () => {
     expect(wrapper.find('.conditions').text()).toEqual('Currently: cloudy');
   });
 
-it('should have an div wrapper with a class of todays weather', () => {
+  it('should have an div wrapper with a class of todays weather', () => {
     expect(wrapper.find('.todays-weather').length).toEqual(1);
   });
 
-it('should have an h2 element with a class of today title', () => {
+  it('should have an h2 element with a class of today title', () => {
     expect(wrapper.find('.today-title').text()).toEqual('Today\'s Weather');
   });
 
-it('should have an h2 element with a class of todays temp', () => {
+  it('should have an h2 element with a class of todays temp', () => {
     expect(wrapper.find('.todays-temp').text()).toEqual('42˚ ');
   });
 
-it('should have an h2 element with a class of todays low', () => {
+  it('should have an h2 element with a class of todays low', () => {
     expect(wrapper.find('.todays-low').text()).toEqual('/ 23˚');
   });
 
-it('should have an h3 element with a class of summary', () => {
+  it('should have an h3 element with a class of summary', () => {
     expect(wrapper.find('.summary').text()).toEqual('Plentiful sunshine. High 42.');
   });
 })
