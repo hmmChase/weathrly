@@ -14,7 +14,6 @@ describe('App', () => {
     expect(wrapper).toBeDefined();
   });
 
-  // Default states
   it('Should initially have default states of null for cleanApiData, location, and no apiData error', () => {
     expect(wrapper.state()).toEqual(
       {
