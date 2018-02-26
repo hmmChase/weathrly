@@ -35,7 +35,6 @@ describe('CurrentWeather', () => {
 
   it('should have a wrapper with a class current weather', () => {
     expect(wrapper.find('.current-weather').length).toEqual(1);
-    console.log(wrapper.debug())
   });
 
   it('should have an h2 element with a class of current location', ()=> {
