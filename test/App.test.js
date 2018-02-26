@@ -82,6 +82,15 @@ describe('App', () => {
     expect(wrapper.find('TenDay').length).toEqual(1);
   });
 
+  it('Should render the CurrentWeather, SevenHour, and TenDay components if there is a location that returned API data', () => {
+    wrapper.setState({ location: 'Denver, CO' });
+    wrapper.setState({ cleanApiData: true });
+
+    expect(wrapper.find('CurrentWeather').length).toEqual(1);
+    expect(wrapper.find('SevenHour').length).toEqual(1);
+    expect(wrapper.find('TenDay').length).toEqual(1);
+  });
+
   it.skip('Should initially retrieve location from localStorage if available', () => {
     localStorage.setItem('location', '45505');
     console.log(localStorage);
