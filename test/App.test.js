@@ -90,27 +90,4 @@ describe('App', () => {
     expect(wrapper.find('SevenHour').length).toEqual(1);
     expect(wrapper.find('TenDay').length).toEqual(1);
   });
-
-  it.skip('Should initially retrieve location from localStorage if available', () => {
-    localStorage.setItem('location', '45505');
-    console.log(localStorage);
-    console.log(localStorage.getItem('location'));
-    console.log(wrapper.state());
-    wrapper = mount(<App />);
-    console.log(localStorage);
-    console.log(wrapper.state());
-  });
-
-
-
-  // Does your component render?
-    // done
-  // Are props being passed and accepted correctly?
-  // Does the component manipulate state?
-  // Are the correct functions being called?
-
-
 });
-
-
-  // console.log(wrapper.debug());

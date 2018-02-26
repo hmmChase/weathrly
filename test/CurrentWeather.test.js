@@ -37,12 +37,16 @@ describe('CurrentWeather', () => {
     expect(wrapper.find('.current-weather').length).toEqual(1);
   });
 
+  it('should have an h2 element with a class of today title', () => {
+    expect(wrapper.find('.today-title').text()).toEqual('Today\'s Weather');
+  });
+
   it('should have an h2 element with a class of current location', () => {
     expect(wrapper.find('.current-location').text()).toEqual('denver, co');
   });
 
   it('should have an h3 element with a class of current day', () => {
-    expect(wrapper.find('.current-day').text()).toEqual('tuesday, may, 24');
+    expect(wrapper.find('.current-day').text()).toEqual('tuesday,may,24');
   });
 
   it('should have an img element with a class of weather icon', () => {
@@ -54,15 +58,15 @@ describe('CurrentWeather', () => {
   });
 
   it('should have an h3 element with a class of conditions', () => {
-    expect(wrapper.find('.conditions').text()).toEqual('Currently: cloudy');
+    expect(wrapper.find('.conditions').text()).toEqual('Currently:cloudy');
   });
 
   it('should have an div wrapper with a class of todays weather', () => {
     expect(wrapper.find('.todays-weather').length).toEqual(1);
   });
 
-  it('should have an h2 element with a class of today title', () => {
-    expect(wrapper.find('.today-title').text()).toEqual('Today\'s Weather');
+  it('should have an h2 element with a class of expected today', () => {
+    expect(wrapper.find('.expected-today').text()).toEqual('Today\'s Weather');
   });
 
   it('should have an h2 element with a class of todays temp', () => {
