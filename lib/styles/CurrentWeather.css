@@ -15,7 +15,7 @@
 }
 
 .current-day {
-  font-size: 1.2;
+  font-size: 1.2em;
   margin: 5px 0;
 }
 
@@ -44,6 +44,11 @@
   margin-bottom: 0;
 }
 
+.expected-today {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
 .todays-temp {
  display: inline-block;
  font-size: 3em;
@@ -57,6 +62,80 @@
 
 .summary {
   font-size: .99em;
+}
+
+@media screen and (max-width: 700px) {
+  .today-title,
+  .expected-today {
+    font-size: 1.7em;
+  }
+
+  .current-location {
+    font-size: 1.6em;
+     margin-top: .3em;
+  }
+
+  .current-day {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .current-weather {
+    margin-left: .3em;
+  }
+
+  .today-title,
+  .expected-today {
+    font-size: 1.4em;
+  }
+
+  .current-location {
+    font-size: 1.3em;
+  }
+
+  .summary {
+    font-size: .8em;
+  }
+
+  .current-temp,
+  .todays-temp,
+  .todays-low {
+    font-size: 2em;
+  }
+
+  .todays-low {
+    margin-top: .2em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .today {
+    display: block;
+  }
+
+  .current-weather {
+    display: block;
+  }
+
+  .todays-weather {
+    width: 23em;
+  }
+
+  .summary {
+    width: 20em;
+    font-size: 1em;
+    margin-left: 2em;
+  }
+
+  .todays-low {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .expected-today {
+   margin: 1.2em 0 .2em 0;
+  }
 }
 
 

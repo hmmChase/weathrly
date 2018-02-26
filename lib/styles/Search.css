@@ -6,7 +6,7 @@
   font-family: 'Montserrat', sans-serif;
   -webkit-appearance: none;
   font-size: 2em;
-  width: 45%;
+  width: 50%;
   border: none;
   padding: 5px;
   outline: none;
@@ -22,4 +22,45 @@
   border-left: solid black 1px;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1210px) {
+  .search-bar {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .search-bar {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .search-bar {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .search-bar {
+    font-size: 1.5em;
+    width: 70%;
+  }
+
+  .search-button {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .search-bar {
+    font-size: 1.1em;
+    height: 2.5em;
+  }
+
+  .search-button {
+    font-size: 1.1em;
+    height: 2.5em;
+  }
 }

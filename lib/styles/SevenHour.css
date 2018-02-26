@@ -3,13 +3,38 @@
   margin-top: 1em;
   text-align: center;
   color: #024558;
-
 }
 
 .seven-card {
   display: flex;
   color: #024558;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   text-align: center;
+}
+
+@media screen and (max-width: 522px) {
+  .seven-title {
+    font-size: 2.5em;
+  }
+
+   .weather-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .seven-title {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .seven-card {
+    display: block;
+  }
+
+  .seven-title {
+    font-size: 2em;
+  }
 }
