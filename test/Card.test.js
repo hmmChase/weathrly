@@ -12,7 +12,6 @@ describe('Hourly Card', () => {
 
   it('should exist', () => {
     expect(wrapper).toBeDefined();
-     console.log(wrapper.debug())
   });
 
   it('should have a wrapper with a class of card', () => {
