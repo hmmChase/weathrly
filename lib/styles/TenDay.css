@@ -1,7 +1,7 @@
 .ten-card {
   display: flex;
   color: #024558;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
 }
