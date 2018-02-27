@@ -66,7 +66,7 @@ describe('CurrentWeather', () => {
   });
 
   it('should have an h2 element with a class of expected today', () => {
-    expect(wrapper.find('.expected-today').text()).toEqual('Today\'s Weather');
+    expect(wrapper.find('.expected-today').text()).toEqual('Expected Today');
   });
 
   it('should have an h2 element with a class of todays temp', () => {
