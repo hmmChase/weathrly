@@ -18,7 +18,7 @@ describe('App', () => {
     expect(wrapper.state()).toEqual(
       {
         cleanApiData: null,
-        location: localStorage.location,
+        location: localStorage.location || '',
         apiDataError: false
       });
   });
