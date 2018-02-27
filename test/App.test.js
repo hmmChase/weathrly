@@ -90,4 +90,20 @@ describe('App', () => {
     expect(wrapper.find('SevenHour').length).toEqual(1);
     expect(wrapper.find('TenDay').length).toEqual(1);
   });
+
+  it('Should update the state.cleanApiData, state.location, and state.error when a user clicks the submit button', () => {
+    const mountedWrapper = mount(<App />);
+
+    mountedWrapper.instance().getWeatherData = jest.fn();
+    mountedWrapper.find('.search-bar').simulate('change', { target: { value: 'Denver, CO' } });
+    mountedWrapper.find('.search-button').simulate('click');
+
+    wrapper.setState({ cleanApiData: true });
+    wrapper.setState({ location: 'Denver, CO' });
+    wrapper.setState({ apiDataError: false });
+
+    expect(mountedWrapper.instance().getWeatherData).toHaveBeenCalledTimes(1);
+    expect(wrapper.state()).toEqual({ cleanApiData: true, location: 'Denver, CO', apiDataError: false });
+  });
+
 });
